@@ -1,0 +1,29 @@
+:root {
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-drk-cyan:hsl(184, 100%, 22%);
+    --clr-vdrk-cyan: hsl(179, 100%, 13%);
+
+    --clr-par: hsla(0, 0%, 100%, 0.75);
+    --clr-main: hsl(0, 0%, 95%);
+
+    --ff-ld: 'Lexend Deca', sans-serif;
+    --ff-bsd: 'Big Shoulders Display', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}

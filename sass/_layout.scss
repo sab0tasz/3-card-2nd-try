@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    max-width: 90rem;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-top: 10rem;
+    animation: showUp 2s ease;
+
+    @media only screen and (max-width: 930px) {
+        flex-direction: column;
+        max-width: 50rem;
+    }
+
+    @media only screen and (max-width: 520px) {
+        margin: 2rem 2rem;
+    }
+}
+
+.card {
+    padding: 4.5rem;
+
+    &__icon {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: var(--clr-main);
+        font-family: var(--ff-bsd);
+        font-weight: 700;
+        letter-spacing: .2rem;
+        margin: 2.5rem 0;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        color: var(--clr-par);
+        font-family: var(--ff-ld);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    &__btn {
+        margin-top: 8rem;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        padding: 1.5rem 4rem;
+        background-color: var(--clr-main);
+        border-radius: 5rem;
+        font-weight: 400;
+        font-family: var(--ff-ld);
+        cursor: pointer;
+        transition: transform 500ms ease;
+
+        &:hover {
+            transform: scale(1.05);
+            
+         }
+
+        &--sedan {
+            color: var(--clr-orange);
+        }
+
+        &--suv {
+            color: var(--clr-vdrk-cyan);
+        }
+
+        &--lux {
+            color: var(--clr-drk-cyan);
+        }
+
+        @media only screen and (max-width: 930px) {
+            margin-top: 4rem;
+        }
+    }
+
+    
+}
+
+.sedans {
+    background-color: var(--clr-orange);
+}
+
+.suvs {
+    background-color: var(--clr-drk-cyan);
+}
+
+.luxury {
+    background-color: var(--clr-vdrk-cyan);
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
